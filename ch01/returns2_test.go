@@ -12,6 +12,6 @@ func Names2() (first string, second string) {
 }
 
 func TestName2(t *testing.T) {
-	n1, n2 := Names()
+	n1, n2 := Names2()
 	fmt.Println(n1, n2)
 }
