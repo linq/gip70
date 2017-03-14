@@ -10,7 +10,7 @@
         {
             "taskName": "run",
             "args": [
-                "run", "${file}"
+                "${file}"
             ]
         },
         {
