@@ -1,7 +1,8 @@
-package main
+package ch01
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
@@ -12,7 +13,7 @@ func count() {
 	}
 }
 
-func main() {
+func TestCount(t *testing.T) {
 	go count()
 	time.Sleep(time.Millisecond * 2)
 	fmt.Println("Hello World")

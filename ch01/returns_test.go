@@ -1,14 +1,15 @@
-package main
+package ch01
 
 import (
 	"fmt"
+	"testing"
 )
 
 func Names() (string, string) {
 	return "Foo", "Bar"
 }
 
-func main() {
+func TestReturn(t *testing.T) {
 	n1, n2 := Names()
 	fmt.Println(n1, n2)
 

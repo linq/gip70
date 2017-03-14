@@ -4,6 +4,20 @@
     "version": "0.1.0",
     "command": "go",
     "isShellCommand": true,
-    "args": ["run", "${file}"],
-    "showOutput": "always"
+    "args": [],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "run",
+            "args": [
+                "run", "${file}"
+            ]
+        },
+        {
+            "taskName": "test",
+            "args": [
+                "test"
+            ]
+        }
+    ]
 }

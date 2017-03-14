@@ -1,7 +1,8 @@
-package main
+package ch01
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
@@ -13,7 +14,7 @@ func printCount(c chan int) {
 	}
 }
 
-func main() {
+func TestChannel(t *testing.T) {
 	c := make(chan int)
 	a := []int{8, 6, 7, 5, 3, 0, 9, -1}
 

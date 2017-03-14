@@ -1,12 +1,13 @@
-package main
+package ch01
 
 import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"testing"
 )
 
-func main() {
+func TestGet(t *testing.T) {
 	resp, _ := http.Get("http://example.com/")
 	body, _ := ioutil.ReadAll(resp.Body)
 	fmt.Println(string(body))
