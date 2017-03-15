@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch02.HelloParse()
+	ch02.JC()
 }
