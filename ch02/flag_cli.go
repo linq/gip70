@@ -14,7 +14,7 @@ func init() {
 	flag.BoolVar(&spanish, "s", false, "Use Spanish language.")
 }
 
-func Parse() {
+func FParse() {
 	flag.Parse()
 
 	flag.VisitAll(func(flag *flag.Flag) {
