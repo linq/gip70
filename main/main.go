@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch02.JC()
+	ch02.Ic()
 }
