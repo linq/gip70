@@ -24,7 +24,10 @@ func hello(res http.ResponseWriter, req *http.Request) {
 func goodbye(res http.ResponseWriter, req *http.Request) {
 	path := req.URL.Path
 	parts := strings.Split(path, "/")
-	name := parts[2]
+	name := ""
+	if len(parts) > 2 {
+		name = parts[2]
+	}
 	if name == "" {
 		name = "Inigo Motoya"
 	}

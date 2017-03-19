@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/linq/gip70/ch02"
+	"github.com/linq/gip70/ch03"
 )
 
 func main() {
-	ch02.Ic()
+	ch03.Lock()
 }
