@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/linq/gip70/ch03"
-)
+import "github.com/linq/gip70/ch04"
 
 func main() {
-	ch03.Lock()
+	ch04.RecoverPanic()
 }
